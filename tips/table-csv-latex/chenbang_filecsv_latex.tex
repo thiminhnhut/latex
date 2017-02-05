@@ -1,0 +1,111 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese.licr]{babel}	% Chọn ngôn ngữ Việt Nam
+\usepackage[utf8]{vietnam}	% Cho phép biên dịch và hiển thị với tiếng Việt
+\usepackage{amsmath,amsfonts,amssymb}	% Các font cho phép soạn thảo công thức toán
+\usepackage{indentfirst}	% Thụt vào đầu dòng cho tất cả các đoạn
+\usepackage[margin=0.9in]{geometry}	% Định dạng các lề trong khổ giấy
+\usepackage[unicode,hidelinks=true]{hyperref}	% Tạo các siêu liên kết
+\hypersetup{pdftitle={Chèn bảng từ file csv vào tài liệu LaTeX},
+	pdfauthor={Thi Minh Nhựt},
+	pdfsubject={LaTeX Tutorials},
+	pdfkeywords={latex, table, csv, csvsimple},
+	bookmarks=true,
+	bookmarksopen=true
+}
+\usepackage[nodayofweek]{datetime}	% Định dạng cách hiển thị thời gian
+
+\usepackage{csvsimple}	% Gói lệnh cho phép chèn dữ liệu từ file csv vào LaTeX
+
+\usepackage{listings} 	% Cho phép chèn code vào tài liệu
+\usepackage{color,xcolor}	% Sử dụng màu trong LaTeX
+
+% Định nghĩa các màu mới
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+% Định nghĩa phần định dạng code
+\lstset{frame=tb,
+  language=TeX,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  breaklines=true,
+  captionpos=t,
+  breakatwhitespace=true,
+  tabsize=2,
+  inputpath=examples/
+}
+
+% Địa chỉ: https://github.com/thiminhnhut/latex/tree/master/tips/listings/tiengviet-trong-listings/tvietlistings.sty
+\usepackage{tvietlistings}	% Sử dụng Tiếng Việt trong gói listings
+
+%%%=============== Tiêu đề của bài viết ===============%%%
+\title{\bfseries \huge Chèn bảng trong file CSV vào tài liệu \LaTeX}
+\author{\Large Thi Minh Nhựt \bigskip \\ \Large \texttt{thiminhnhut@gmail.com}}
+\date{\Large Ngày 05 tháng 02 năm 2017}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\begin{thebibliography}{99}
+	\bibitem{csvsimple-ctan} \href{https://www.ctan.org/author/sturm}{\textbf{Thomas F.~Sturm}}, \href{https://www.ctan.org/pkg/csvsimple}{\emph{csvsimple – Simple CSV file processing}}, \href{https://www.ctan.org/}{CTAN -- Comprehensive TEX Archive Network}, \formatdate{01}{07}{2016}.
+	
+	\bibitem{csvsimple-thayson} \href{https://osshcmup.wordpress.com/}{\textbf{Nguyễn Thái Sơn}}, \href{https://goo.gl/F3o77y}{\emph{Bảng trong LaTeX và quan hệ của nó với bảng trong Excel}}, \formatdate{13}{07}{2014}.		
+\end{thebibliography}
+
+\section{Giới thiệu}
+	Các số liệu thường được lưu trong các file Excel. Muốn chèn bảng trong Excel (cụ thể là bảng số liệu trong file \verb|csv|) vào tài liệu viết bằng \LaTeX\, chúng ta có gói lệnh \verb|csvsimple|~\cite{csvsimple-ctan}.\\
+
+	Phần hướng dẫn bên dưới đã được thử nghiệm thành công với phiên bản \TeX Live 2015 được cài đặt trên hệ điều hành Ubuntu 16.04 và sử dụng trình soạn thảo \TeX Maker để biên dịch với PDF \LaTeX. \\
+	
+	File \TeX\ của bài hướng dẫn được lưu ở địa chỉ \url{https://github.com/thiminhnhut/latex/tree/master/tips/table-csv-latex}, chúng ta có thể dùng file này để làm mẫu thực hiện soạn theo.
+
+\section{Chèn bảng trong file CSV vào tài liệu \LaTeX}
+	\begin{itemize}
+		\item Khai báo sử dụng gói lệnh \verb|csvsimple|: \verb|\usepackage{csvsimple}|.
+
+		\item Chèn bảng từ file csv vào \LaTeX\ dùng lệnh \verb|\csvautotabular{file.csv}|, với \verb|file.csv| là file csv muốn chèn vào.
+		
+		\item Chèn bảng từ file csv vào \LaTeX\ dùng lệnh \verb|\csvreader|. Cú pháp lệnh:
+			\begin{verbatim}
+				\csvreader[options]{file name}{assignments}{command list}
+			\end{verbatim}
+			
+		Cách sử dụng lệnh \verb|\csvreader| xem trong phần ví dụ 2 của mục~\ref{Sec:vidu} sẽ hiễu rõ hơn.
+		
+		\item Để biết cách sử dụng nhiều lệnh hơn của gói lệnh \verb|csvsimple| chúng ta đọc phần hướng dẫn trong tài liệu~\cite{csvsimple-ctan}.
+	\end{itemize}
+
+\section{Ví dụ}\label{Sec:vidu}
+	File \TeX\ của ví dụ 1 và ví dụ 2 được lưu ở địa chỉ \url{https://github.com/thiminhnhut/latex/tree/master/tips/table-csv-latex/examples}, chúng ta có thể dùng file này để làm mẫu thực hiện soạn theo.
+	
+\subparagraph{Ví dụ 1} Sử dụng lệnh \verb|\csvautotabular{file.csv}| để chèn bảng từ file vào tài liệu \LaTeX\ (không cần định dạng bảng).	
+	\begin{itemize}
+		\item Chương trình: \lstinputlisting{filetex_example-1.tex}
+		\item Kết quả:
+		 	\begin{center}
+		 		\csvautotabular{examples/example.csv}
+		 	\end{center}
+	\end{itemize}
+	
+\subparagraph{Ví dụ 2} Sử dụng lệnh \verb|\csvreader| để chèn bảng vào tài liệu \LaTeX\ với định dạng bảng và nhóm các cột lại với nhau~\cite{csvsimple-thayson}. Chúng ta đã nhóm cột Họ và Tên (cột 2 và cột 3) lại chung với nhau.
+	\begin{itemize}
+		\item Chương trình: \lstinputlisting{filetex_example-2.tex}
+		\item Kết quả:
+		 	\begin{center}
+		 		\csvreader[tabular=|c|c|l|c|c|c|c|,
+						table head=\hline STT & MSSV & Họ và Tên & Giới tính & Lớp & Giữa kỳ & Cuối kỳ \\ \hline, 
+						late after line=\\ \hline]
+						{examples/example.csv}{}
+						{\thecsvrow & \csvcolii & \csvcoliii\ \csvcoliv & \csvcolv & \csvcolvi & \csvcolvii & \csvcolviii}
+		 	\end{center}
+	\end{itemize}
+\end{document}

@@ -1,0 +1,12 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}	
+\usepackage[left=0.2cm,right=0.2cm,top=0.2cm,bottom=0.2cm, paperwidth=16.5cm,paperheight=6.2cm]{geometry}
+
+\usepackage{csvsimple}	% Cho phép chèn dữ liệu từ file csv vào LaTeX
+
+\begin{document}
+	\begin{center}
+		\csvautotabular{example.csv}
+	\end{center}
+\end{document}

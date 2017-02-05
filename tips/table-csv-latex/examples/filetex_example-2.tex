@@ -1,0 +1,16 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}	
+\usepackage[left=.2cm,right=.2cm,top=.2cm,bottom=.2cm, paperwidth=16.5cm,paperheight=6.4cm]{geometry}
+
+\usepackage{csvsimple}	% Cho phép chèn dữ liệu từ file csv vào LaTeX
+
+\begin{document}
+	\begin{center}
+		\csvreader[tabular=|c|c|l|c|c|c|c|,
+						table head=\hline STT & MSSV & Họ và Tên & Giới tính & Lớp & Giữa kỳ & Cuối kỳ \\ \hline, 
+						late after line=\\ \hline]
+						{example.csv}{}
+						{\thecsvrow & \csvcolii & \csvcoliii\ \csvcoliv & \csvcolv & \csvcolvi & \csvcolvii & \csvcolviii}
+	\end{center}
+\end{document}
