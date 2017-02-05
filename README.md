@@ -71,3 +71,5 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 	* [Sử dụng tiếng Việt trong gói lệnh listings](https://github.com/thiminhnhut/latex/tree/master/tips/listings/tiengviet-trong-listings)
 	
 4. [Sử dụng font Time New Roman trong LaTeX với XeLaTeX hoặc LuaLaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/xelatex/timenewroman)
+
+5. [Chèn bảng trong file csv vào tài liệu LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/table-csv-latex)
