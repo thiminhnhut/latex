@@ -1,0 +1,70 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{indentfirst}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+%\usepackage[paperheight=11cm,left=1cm,right=1cm,top=-2cm,bottom=1cm]{geometry}
+
+\usepackage[unicode,hidelinks=true]{hyperref}
+\hypersetup{pdftitle={Ví dụ cách đánh số cho các chương và các mục trong lớp report},
+	pdfauthor={Thi Minh Nhựt},
+	pdfsubject={LaTeX Tutorials},
+	pdfkeywords={latex, report, chapter, section, subsection, subsubsection, subsubsubsection, paragraph, subparagraph, parasection, subparasection},
+	bookmarks=true,
+	bookmarksopen=true
+}
+
+%% Đánh số đủ 7 cấp
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+% Định nghĩa lệnh parasection và subparasection từ lệnh paragraph subparagraph
+\newcommand{\parasection}[1]{\paragraph{#1}\mbox{}\medskip\par}
+\newcommand{\subparasection}[1]{{\setlength{\parindent}{0pt}\subparagraph{#1}\mbox{}\medskip \par}}
+
+%% Nếu không muốn tự động thụt vào đầu dòng thì thay lệnh \par thành \\ và không khai báo \usepackage{indentfirst}
+%\newcommand{\parasection}[1]{\paragraph{#1}\mbox{}\medskip\\}
+%\newcommand{\subparasection}[1]{{\setlength{\parindent}{0pt}\subparagraph{#1}\mbox{}\medskip\\}}
+
+\title{\bfseries \huge Ví dụ cách đánh số cho các chương và các mục trong lớp report}
+\author{\Large Thi Minh Nhựt \bigskip \\  \Large \texttt{thiminhnhut@gmail.com}}
+\date{\Large Ngày 06 tháng 02 năm 2017}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+\chapter{Lệnh chapter}
+\chapter{Lệnh chapter}
+
+\section{Lệnh section}
+Nội dung \ldots
+\section{Lệnh section}
+Nội dung \ldots
+
+\subsection{Lệnh subsection}
+Nội dung \ldots
+\subsection{Lệnh subsection}
+Nội dung \ldots
+
+\subsubsection{Lệnh subsubsection}
+Nội dung \ldots
+\subsubsection{Lệnh subsubsection}
+Nội dung \ldots
+
+\parasection{Lệnh parasection}
+Nội dung \ldots
+\parasection{Lệnh parasection}
+Nội dung \ldots
+
+\subparasection{Lệnh subparasection}
+Nội dung \ldots
+\subparasection{Lệnh subparasection}
+Nội dung \ldots
+
+\end{document}

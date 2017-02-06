@@ -1,0 +1,58 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{indentfirst}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+%\usepackage[paperheight=8.5cm,left=1cm,right=1cm,top=1cm,bottom=-1cm]{geometry}
+\usepackage[unicode,hidelinks=true]{hyperref}
+\hypersetup{pdftitle={Ví dụ cách đánh số cho các mục trong lớp article},
+	pdfauthor={Thi Minh Nhựt},
+	pdfsubject={LaTeX Tutorials},
+	pdfkeywords={latex, article, section, subsection, subsubsection, subsubsubsection, paragraph, subparagraph},
+	bookmarks=true,
+	bookmarksopen=true
+}
+
+%% Đánh số đủ 7 cấp
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+\title{\bfseries \huge Ví dụ cách đánh số cho các mục trong lớp article}
+\author{\Large Thi Minh Nhựt \bigskip \\  \Large \texttt{thiminhnhut@gmail.com}}
+\date{\Large Ngày 06 tháng 02 năm 2017}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+\section{Lệnh section}
+Nội dung \ldots
+\section{Lệnh section}
+Nội dung \ldots
+
+\subsection{Lệnh subsection}
+Nội dung \ldots
+\subsection{Lệnh subsection}
+Nội dung \ldots
+
+\subsubsection{Lệnh subsubsection}
+Nội dung \ldots
+\subsubsection{Lệnh subsubsection}
+Nội dung \ldots
+
+\paragraph{Lệnh paragraph}
+Nội dung \ldots
+\paragraph{Lệnh paragraph}
+Nội dung \ldots
+
+\subparagraph{Lệnh subparagraph}
+Nội dung \ldots
+\subparagraph{Lệnh subparagraph}
+Nội dung \ldots
+
+\end{document}

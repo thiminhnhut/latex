@@ -1,0 +1,58 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{indentfirst}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\usepackage[unicode,hidelinks=true]{hyperref}
+\hypersetup{pdftitle={Ví dụ thay đổi cách đánh số cho các chương và các mục trong lớp report},
+	pdfauthor={Thi Minh Nhựt},
+	pdfsubject={LaTeX Tutorials},
+	pdfkeywords={latex, report, chapter, section, subsection, subsubsection},
+	bookmarks=true,
+	bookmarksopen=true
+}
+
+%% Đánh số tới subsubsection
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+
+%% Thay đổi cách đánh số
+\renewcommand\thechapter{\Roman{chapter}}
+\renewcommand\thesection{\Alph{section}}
+\renewcommand\thesubsection{\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection\alph{subsubsection}}
+
+\title{\bfseries \huge Ví dụ thay đổi cách đánh số cho các chương và các mục trong lớp report}
+\author{\Large Thi Minh Nhựt \bigskip \\  \Large \texttt{thiminhnhut@gmail.com}}
+\date{\Large Ngày 06 tháng 02 năm 2017}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+\chapter{Lệnh chapter}
+\chapter{Lệnh chapter}
+
+\section{Lệnh section}
+Nội dung \ldots
+\section{Lệnh section}
+Nội dung \ldots
+
+\subsection{Lệnh subsection}
+Nội dung \ldots
+\subsection{Lệnh subsection}
+Nội dung \ldots
+
+\subsubsection{Lệnh subsubsection}
+Nội dung \ldots
+\subsubsection{Lệnh subsubsection}
+Nội dung \ldots
+
+\end{document}
