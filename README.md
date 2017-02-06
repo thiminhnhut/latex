@@ -73,3 +73,5 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 4. [Sử dụng font Time New Roman trong LaTeX với XeLaTeX hoặc LuaLaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/xelatex/timenewroman)
 
 5. [Chèn bảng trong file csv vào tài liệu LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/table-csv-latex)
+
+6. [Đánh số tiêu đề cho các phần, các chương và các mục trong các lớp của tài liệu LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/danhso-cacmuc-tronglatex)
