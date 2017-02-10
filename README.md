@@ -52,7 +52,7 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 
 ## Cách sử dụng các gói lệnh
 
-1. [sagetex - Gói lệnh cho phép nhúng mã Sage vào LaTeX để tính toán tự động](https://github.com/thiminhnhut/latex/tree/master/sagetex)
+1. [Sagetex - Gói lệnh cho phép nhúng mã Sage vào LaTeX để tính toán tự động](https://github.com/thiminhnhut/latex/tree/master/sagetex)
 
 	* [Sử dụng Sage trong LaTeX với gói lệnh sagetex trên hệ điều hành Ubuntu](https://github.com/thiminhnhut/latex/blob/master/sagetex/make-sagetex-known-to-tex.md)
 	
@@ -75,3 +75,5 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 5. [Chèn bảng trong file csv vào tài liệu LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/table-csv-latex)
 
 6. [Đánh số tiêu đề cho các phần, các chương và các mục trong các lớp của tài liệu LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/danhso-cacmuc-tronglatex)
+
+7. [Chuyển dấu chấm thành dấu phẩy với chế độ toán trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/dot2comma-math)
