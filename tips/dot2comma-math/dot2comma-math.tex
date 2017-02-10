@@ -1,0 +1,118 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage[margin=.8in]{geometry}
+\usepackage[nodayofweek]{datetime}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{indentfirst}
+
+\usepackage{siunitx}
+\sisetup{
+	output-decimal-marker={,} % just uncomment if you want to use comma as the decimal marker!
+}
+
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage[unicode,hidelinks=true]{hyperref}	% Tạo các siêu liên kết
+\hypersetup{pdftitle={Chuyển đổi dấu chấm thành dấu phẩy trong chế độ toán},
+	pdfauthor={Thi Minh Nhựt},
+	pdfsubject={LaTeX Tutorials},
+	pdfkeywords={latex, math mode, dots to commas},
+	bookmarks=true,
+	bookmarksopen=true
+}
+
+\usepackage{fancyvrb}
+\usepackage{verbatim}
+
+\title{\bfseries \huge Chuyển đổi dấu chấm thành dấu phẩy với chế độ toán trong \LaTeX}
+\author{\Large Thi Minh Nhựt \bigskip \\  \Large \texttt{thiminhnhut@gmail.com}}
+\date{\Large Ngày 10 tháng 02 năm 2017}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\begin{thebibliography}{99}
+	\bibitem{stackexchange} Aks: \href{https://goo.gl/AGFMFr}{\textbf{Henri Menke}} -- Answered: \href{https://goo.gl/nl1sm9}{\textbf{David Carlisle}}, \href{https://goo.gl/ZNH6ce}{\emph{How to convert dots to commas in mathmode?}}, \href{http://tex.stackexchange.com/}{TeX - LaTeX Stack Exchange}, \formatdate{13}{02}{2013}.
+	
+	\bibitem{listings-ctan} \href{https://www.ctan.org/author/wright}{\textbf{Joseph Wright}}, \href{https://www.ctan.org/pkg/siunitx}{\emph{siunitx – A comprehensive (SI) units package}}, \href{https://www.ctan.org/}{CTAN -- Comprehensive TEX Archive Network}, Version 2.7c 2017-02-01.
+\end{thebibliography}
+
+\section{Giới thiệu}
+	Khi sử dụng các ngôn ngữ lập trình như \Verb|Matlab|, \Verb|Python|, \ldots để tính toán đều sử dụng dấu chấm để phân cách giữa phần nguyên và phần thập phân trong các số thực (ví dụ $3.14$). Với một số nước quy định (ví dụ như nước Đức) dùng dấu phẩy để phân cách giữa phần nguyên và phần thập phân thay cho dấu chấm (ví dụ $\num{3.14}$).\\
+	
+	Chúng ta có thể giải quyết vần đề trên bằng một số cách như sau:
+		\begin{itemize}
+			\item Tìm kiếm từng dấu chấm và thay thế thành từng dấu phẩy, với cách làm này rất mất thời gian.
+			
+			\item Sử dụng lệnh hoặc gói lệnh trong \LaTeX\ để thực hiện việc này tự động, chúng ta vừa có thể sử dụng được kết quả tính toán của chương trình khác vừa đáp ứng được định dạng theo yêu cầu.
+		\end{itemize}
+	
+	Phần hướng dẫn bên dưới đã được thử nghiệm thành công với phiên bản \TeX Live 2015 được cài đặt trên hệ điều hành Ubuntu 16.04 và sử dụng trình soạn thảo \TeX Maker để biên dịch với PDF \LaTeX. \\
+	
+	File \TeX\ của bài hướng dẫn được lưu ở địa chỉ \url{https://github.com/thiminhnhut/latex/tree/master/tips/dot2comma-math}, chúng ta có thể dùng file này để làm mẫu thực hiện soạn theo.
+	
+\section{Cách thực hiện}
+	Chúng ta có một số cách thực hiện như sau:
+		\begin{itemize}
+			\item \textbf{Cách 1:} Sử dụng lệnh \Verb|\mathcode`\.=\mathcode`\,|
+				\begin{itemize}
+					\item Nhập các số ở chế độ toán (ví dụ: \Verb|$ $|,  \Verb|$$ $$|, các môi trường toán \Verb|align|, \Verb|equation|,\ldots).
+					\item Đặt trước \Verb|\begin{document}| nếu muốn áp dụng cho toàn bộ tài liệu.
+						
+					\item Nếu muốn áp dụng cho một phần của tài liệu thì đặt lệnh trên và số vào cặp dấu ngoặc \Verb|{ }|. Ví dụ:
+						\begin{itemize}
+\item Code:
+\begin{Verbatim}[xleftmargin=10mm, numbers=left]
+{\mathcode`\.=\mathcode`\,
+% Chỉ có phần bên trong { } bị ảnh hưởng
+Số $\pi$ có giá trị: $\pi \approx 3.14$
+}
+
+% Phần bên ngoài không bị ảnh hưởng
+Số $\pi$ có giá trị: $\pi \approx 3.14$
+\end{Verbatim}
+
+\item Kết quả:
+
+{\mathcode`\.=\mathcode`\,
+Số $\pi$ có giá trị: $\pi \approx 3.14$ (phía sau dấy phẩy vẫn còn khoảng trống).
+}
+
+Số $\pi$ có giá trị: $\pi \approx 3.14$
+						
+						\end{itemize}										
+				\end{itemize}
+			\item \textbf{Cách 2:} Sử dụng lệnh \Verb|\DeclareMathSymbol{.}{\mathord}{letters}{"3B}|
+				\begin{itemize}
+					\item Nhập các số ở chế độ toán.
+						
+					\item Đặt trước \Verb|\begin{document}| và được áp dụng cho toàn bộ tài liệu.
+						
+					\item Số tạo ra không có khoảng trống phía sau dấu phẩy như ví dụ ở cách 1.
+				\end{itemize}
+				
+			\item \textbf{Cách 3:} Sử dụng lệnh \Verb|\num| trong gói lệnh \Verb|siunitx|
+				\begin{itemize}
+					\item Khai báo trước \Verb|\begin{document}|:
+\begin{Verbatim}[xleftmargin=10mm, numbers=left]
+\usepackage{siunitx}
+\sisetup{
+	output-decimal-marker={,}
+}
+\end{Verbatim}
+					\item Sử dụng lệnh \Verb|\num| và nhập số ở chế độ toán. Ví dụ:
+						\begin{itemize}
+							\item Code: \Verb|Số $\pi$ có giá trị: $\pi \approx \num{3.14}$|
+
+							\item Kết quả: Số $\pi$ có giá trị: $\pi \approx \num{3.14}$ (phía sau dấu phẩy không có khoảng trống).						
+						\end{itemize}
+				\end{itemize}
+		\end{itemize}
+\end{document}

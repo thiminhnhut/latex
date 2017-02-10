@@ -1,0 +1,104 @@
+% Copyright 2000-2006 Werner Lemberg <wl@gnu.org> and
+%                     Han The Thanh <hanthethanh@gmx.net>.
+% This file is part of vntex.  License: LPPL, version 1.3 or newer,
+% according to http://www.latex-project.org/lppl.txt
+
+\ifx\ProvidesFile\undefined \else
+  \ProvidesFile{vncaps.tex}[2006/06/07 v1.1 Captions in Vietnamese]  
+\fi
+ 
+% Vietnamese captions; edit them in viscii/tcvn/utf8, then use
+% `vntovn viscii vntex' or a similar command to convert to vntex.
+%
+% History
+%
+% ????/??/??:
+%     Split off captions from vietnam.ldf.
+%     Add \captionsenglish, \dateUSenglish, and \dateenglish.
+%
+% 2005/04/21:
+%     Add copyright message.
+%     Don't use `{}' but a space after macros which don't have arguments.
+%
+% 2006/06/07:
+%     Fix bug in \indexname.  Add version number.
+
+\ifx\providecommand \undefined
+  \let\providecommand \def
+\fi
+
+\providecommand\captionsvietnam{% 
+  \def\prefacename{L\`\ohorn i n\'oi \dj\`\acircumflex u}%
+  %\def\refname{T\`ai li\d\ecircumflex u}%
+  \def\refname{T{\`a}i li\IeC {\d \ecircumflex }u tham kh\IeC {\h a}o}
+  \def\abstractname{T\'om t\'\abreve t n\d\ocircumflex i dung}%
+  \def\bibname{T\`ai li\d\ecircumflex u tham kh\h{a}o}%
+  \def\chaptername{Ch\uhorn \ohorn ng}%  
+  \def\appendixname{Ph\d{u} l\d{u}c}%
+  %\def\contentsname{M\d{u}c l\d{u}c}%
+ \def\contentsname{N{\d \ocircumflex }i dung}
+  \def\listfigurename{Danh s\'ach h\`inh v\~e}%
+  \def\listtablename{Danh s\'ach b\h{a}ng}%
+  \def\indexname{Ch\h{i} m\d{u}c}%
+  \def\figurename{H\`inh}%
+  \def\tablename{B\h{a}ng}%
+  \def\partname{Ph\`\acircumflex n}%
+  \def\pagename{Trang}%
+  \def\headpagename{Trang}%
+  \def\seename{Xem}%
+  \def\alsoname{Xem th\ecircumflex m}%
+  \def\enclname{K\`em theo}%
+  \def\ccname{C\`ung g\h\uhorn i}%
+  \def\headtoname{G\h\uhorn i}%
+  \def\proofname{Ch\'\uhorn ng minh}%
+  \def\glossaryname{T\`\uhorn{} \dj i\h\ecircumflex n ch\'u gi\h ai}}
+
+\providecommand\datevietnam{%
+  \def\today{%
+    Ng\`ay \number\day\space
+    th\'ang \number\month\space
+    n\abreve m \number\year}}
+
+\providecommand\captionsenglish{%
+  \def\prefacename{Preface}%
+  \def\refname{References}%
+  \def\abstractname{Abstract}%
+  \def\bibname{Bibliography}%
+  \def\chaptername{Chapter}%
+  \def\appendixname{Appendix}%
+  \def\contentsname{Contents}%
+  \def\listfigurename{List of Figures}%
+  \def\listtablename{List of Tables}%
+  \def\indexname{Index}%
+  \def\figurename{Figure}%
+  \def\tablename{Table}%
+  \def\partname{Part}%
+  \def\enclname{encl}%
+  \def\ccname{cc}%
+  \def\headtoname{To}%
+  \def\pagename{Page}%
+  \def\headpagename{Page}%
+  \def\prefacename{Preface}%
+  \def\seename{see}%
+  \def\alsoname{see also}}
+
+\providecommand\dateenglish{%
+  \def\today{%
+    \ifcase\day\or 1st\or 2nd\or 3rd\or 4th\or 5th\or 6th\or 7th\or
+    8th\or 9th\or 10th\or 11th\or 12th\or 13th\or 14th\or 15th\or
+    16th\or 17th\or 18th\or 19th\or 20th\or 21st\or 22nd\or 23rd\or
+    24th\or 25th\or 26th\or 27th\or 28th\or 29th\or 30th\or 31st\fi
+    ~\ifcase\month\or January\or February\or March\or April\or May\or
+    June\or July\or August\or September\or October\or November\or
+    December\fi \space
+    \number\year}}
+
+\providecommand\dateUSenglish{%
+  \def\today{%
+    \ifcase\month\or January\or February\or March\or April\or May\or
+    June\or July\or August\or September\or October\or November\or
+    December\fi \space\number\day, \number\year}}
+
+\endinput
+
+% end of vncaps.tex
