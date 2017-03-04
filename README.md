@@ -77,3 +77,5 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 6. [Đánh số tiêu đề cho các phần, các chương và các mục trong các lớp của tài liệu LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/danhso-cacmuc-tronglatex)
 
 7. [Chuyển dấu chấm thành dấu phẩy với chế độ toán trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/dot2comma-math)
+
+8. [Sử dụng font size mở rộng (24pt, 28pt) trong trình chiếu với Beamer](https://github.com/thiminhnhut/latex/blob/572471627d37ec9984515d8564b0d559abaf8595/tips/font-size-extension-beamer/font-size-in-beamer.md)
