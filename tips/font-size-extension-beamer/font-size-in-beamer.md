@@ -2,7 +2,7 @@
 
 Sưu tầm: Thi Minh Nhựt - Email: thiminhnhut@gmail.com
 
-Thời gian: Ngày 04 tháng 03 năm 2017
+Thời gian: Ngày 06 tháng 03 năm 2017
 
 ## Tài liệu tham khảo
 
@@ -16,8 +16,8 @@ Khi muốn sử dụng các cỡ chữ lớn hơn trong Beamer
 (khác các cỡ `8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt`),
 cần có những file `size.clo` thích hợp.
 
-* Hướng dẫn này được thực hiện trên phiên bản `TeXLive 2013`
-được cài đặt trên hệ điều hành `Ubuntu 14.04`.
+* Hướng dẫn này được thực hiện trên phiên bản `TeXLive 2015`
+được cài đặt trên hệ điều hành `Ubuntu 16.04`.
 
 * Ví dụ, cần thêm 2 cỡ chữ mở rộng là `24pt` và `28pt` thì cần có 2 file: 
 [size24.clo](http://www.stat.berkeley.edu/~paciorek/size24.clo) 
@@ -42,16 +42,22 @@ và lưu vào thư mục `extsizes` của `TeXLive`.
 				$ sudo cp size24.clo size28.clo /usr/share/texlive/texmf-dist/tex/latex/extsizes/
 	
 
-* Trong file `/usr/share/texmf/tex/latex/beamer/base/beamer.cls`,
-thêm vào 2 dòng sau vào bên dưới dòng `\DeclareOptionBeamer{20pt}{\def\beamer@size{{size20.clo}}}`:
+* Trong file `beamer.cls`, thêm vào 2 dòng sau vào bên dưới dòng 
+`\DeclareOptionBeamer{20pt}{\def\beamer@size{{size20.clo}}}`:
 
 		\DeclareOptionBeamer{24pt}{\def\beamer@size{{size24.clo}}}
 		
 		\DeclareOptionBeamer{28pt}{\def\beamer@size{{size28.clo}}}
+		
+	+ Tìm địa chỉ của file `beamer.cls`:
+	
+			$ sudo find / -name beamer.cls
+			
+			/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 
 	+ Dùng lệnh sau để mở file `beamer.cls`:
 	
-			$ sudo nano /usr/share/texmf/tex/latex/beamer/base/beamer.cls
+			$ sudo nano /usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 			
 	+ Sau khi thêm 2 dòng trên vào, nội dung file `beamer.cls` trong giống như sau:
 	
