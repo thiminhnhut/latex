@@ -78,4 +78,4 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 
 7. [Chuyển dấu chấm thành dấu phẩy với chế độ toán trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/dot2comma-math)
 
-8. [Sử dụng font size mở rộng (24pt, 28pt) trong trình chiếu với Beamer](https://github.com/thiminhnhut/latex/blob/572471627d37ec9984515d8564b0d559abaf8595/tips/font-size-extension-beamer/font-size-in-beamer.md)
+8. [Sử dụng font size mở rộng (24pt, 28pt) trong trình chiếu với Beamer](https://github.com/thiminhnhut/latex/blob/a803ef9a74af23f52980159a6b549cbd23b1b1a1/tips/font-size-extension-beamer/font-size-in-beamer.md)
