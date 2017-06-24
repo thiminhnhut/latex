@@ -45,11 +45,20 @@ Nội dung của các bài hướng dẫn trong repository này là kết quả 
 và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi rõ nguồn trích dẫn, đưa link về bài viết gốc.*
  
 **Nội dung của Repository:**
+
+* Cách tạo bài trình chiếu với Beamer.
  
 * Cách sử dụng một số gói lệnh hỗ trợ soạn thảo LaTeX.
  
 * Các thủ thuật: [tips](https://github.com/thiminhnhut/latex/tree/master/tips)
 
+
+## Tạo trình chiếu với Beamer
+
+1. Một số thủ thuật với Beamer
+
+	* [In tài liệu khi tạo trình chiếu với Beamer](https://github.com/thiminhnhut/latex/blob/master/beamer/beamer-tips/beamer-handout.md)
+	
 ## Cách sử dụng các gói lệnh
 
 1. [Sagetex - Gói lệnh cho phép nhúng mã Sage vào LaTeX để tính toán tự động](https://github.com/thiminhnhut/latex/tree/master/sagetex)
