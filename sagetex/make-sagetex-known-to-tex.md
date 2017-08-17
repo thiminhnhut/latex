@@ -83,11 +83,11 @@ Ví dụ cách cài đặt `SageMath` cho hệ điều hành Ubuntu.
 			
 	+ Copy tất cả các thư mục và file trong `/usr/lib/sagemath/local/share/texmf/` đến thư mục `$HOME/texmf/`:
 	
-			$ cp -r /usr/lib/sagemath/local/share/texmf/* $HOME/texmf/
+			$ sudo cp -r /usr/lib/sagemath/local/share/texmf/* $HOME/texmf/
 			
 	+ Làm cho TeX biết sự thay đổi này:
 	
-			$ texhash $HOME/texmf/
+			$ sudo texhash $HOME/texmf/
 
 ## Cách sử dụng gói lệnh sagetex
 
