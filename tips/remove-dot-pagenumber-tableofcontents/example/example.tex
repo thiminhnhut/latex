@@ -1,0 +1,31 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+
+% Đoạn code xóa dấu chấm và đánh số trang trong mục lục
+\usepackage{tocloft}
+\addtocontents{toc}{\cftpagenumbersoff{chapter}}
+\addtocontents{toc}{\cftpagenumbersoff{section}}
+\addtocontents{toc}{\cftpagenumbersoff{subsection}}
+\renewcommand{\cftdot}{}
+
+\title{Xóa dấu chấm và số trang của các đề mục trong mục lục}
+\author{Thực hiện: Thi Minh Nhựt}
+\author{Thời gian: \today}
+
+\begin{document}
+\maketitle
+    
+\tableofcontents
+\newpage
+
+
+\section{Nội dung A}
+\subsection{Nội dung AA}
+\subsection{Nội dung AAA}
+\end{document}
