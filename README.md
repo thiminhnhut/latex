@@ -90,3 +90,5 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 1. [Sử dụng font size mở rộng (24pt, 28pt) trong trình chiếu với Beamer](https://github.com/thiminhnhut/latex/tree/master/tips/font-size-extension-beamer)
 
 1. [Xóa dấu chấm và số trang trong mục lục](https://github.com/thiminhnhut/latex/tree/master/tips/remove-dot-pagenumber-tableofcontents)
+
+1. [Làm cho chiều rộng của bảng vừa với chiều rộng của trang trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/force-a-table-into-page-width)
