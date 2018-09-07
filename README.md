@@ -92,3 +92,5 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 1. [Xóa dấu chấm và số trang trong mục lục](https://github.com/thiminhnhut/latex/tree/master/tips/remove-dot-pagenumber-tableofcontents)
 
 1. [Làm cho chiều rộng của bảng vừa với chiều rộng của trang trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/force-a-table-into-page-width)
+
+1. [Tùy chỉnh tiêu đề của mục lục nằm ở giữa trang trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/tableofcontents-centering)
