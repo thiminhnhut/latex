@@ -72,11 +72,11 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 
 1. [TeXMaker - Chương trình soạn thảo mã nguồn LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/texmaker)
 
-* [Cho phép sử dụng phím tắt của TeXMaker trên hệ điều hành Ubuntu 16.04](https://github.com/thiminhnhut/latex/blob/master/tips/texmaker/shortcuts-texmaker-ubuntu.md)
+    * [Cho phép sử dụng phím tắt của TeXMaker trên hệ điều hành Ubuntu 16.04](https://github.com/thiminhnhut/latex/blob/master/tips/texmaker/shortcuts-texmaker-ubuntu.md)
 
 1. [Listings - Chèn code vào tài liệu LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/listings)
 
-* [Sử dụng tiếng Việt trong gói lệnh listings](https://github.com/thiminhnhut/latex/tree/master/tips/listings/tiengviet-trong-listings)
+    * [Sử dụng tiếng Việt trong gói lệnh listings](https://github.com/thiminhnhut/latex/tree/master/tips/listings/tiengviet-trong-listings)
 
 1. [Sử dụng font Time New Roman trong LaTeX với XeLaTeX hoặc LuaLaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/xelatex/timenewroman)
 
