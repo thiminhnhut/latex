@@ -14,25 +14,25 @@ ngôn ngữ TeX của Donald E. Knuth. Ngày nay, LaTeX được duy trì và ph
 
 * Những điểm mạnh của LaTeX:
 
-  * Tạo ra các bản in chuyên nghiệp và đẹp.
+    + Tạo ra các bản in chuyên nghiệp và đẹp.
 
-  * Hỗ trợ mạnh trong soạn thảo các công thức toán học và kỹ thuật.
+    + Hỗ trợ mạnh trong soạn thảo các công thức toán học và kỹ thuật.
 
-  * Chỉ cần quan tâm nhiều đến nội dung, còn cấu trúc tài liệu, phần trình bày được tự động bởi TeX.
+    + Chỉ cần quan tâm nhiều đến nội dung, còn cấu trúc tài liệu, phần trình bày được tự động bởi TeX.
 
-  * Có nhiều gói lệnh mở rộng giúp việc soạn thảo và định dạng dễ dàng hơn, đẹp hơn.
+    + Có nhiều gói lệnh mở rộng giúp việc soạn thảo và định dạng dễ dàng hơn, đẹp hơn.
 
-  * LaTeX là công cụ miễn phí và chạy trên nhiều hệ điều hành: Windows, Linux, Mac,...
+    + LaTeX là công cụ miễn phí và chạy trên nhiều hệ điều hành: Windows, Linux, Mac,...
 
 * Những điểm yếu của LaTeX:
 
-  * Sử dụng các lệnh để soạn thảo, gây nhiều khó khăn khi mới bắt đầu.
+    + Sử dụng các lệnh để soạn thảo, gây nhiều khó khăn khi mới bắt đầu.
 
-  * Khó khăn và mất thời gian trong việc tạo ra một kiểu trình bày mới.
+    + Khó khăn và mất thời gian trong việc tạo ra một kiểu trình bày mới.
 
-  * Tạo ra các tài liệu với cấu trúc lộn xộn, nhiều định dạng,... rất mất thời gian.
+    + Tạo ra các tài liệu với cấu trúc lộn xộn, nhiều định dạng,... rất mất thời gian.
 
-  * Không nhìn thấy trước hình dáng của tài liệu trước khi biên dịch ra file PDF.
+    + Không nhìn thấy trước hình dáng của tài liệu trước khi biên dịch ra file PDF.
 
 Tôi bắt đầu sử dụng LaTeX từ tháng 3 năm 2016 dùng trình soạn thảo TeXMaker với MikTeX 2.9 (trên Windows 7),
 TeXLive 2013 (trên Ubuntu 14.04) và hiện nay là TeXLive 2015 (trên Ubuntu 16.04). Trong thời gian đầu tìm hiểu
@@ -56,15 +56,15 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 
 1. Một số thủ thuật với Beamer
 
-  * [In tài liệu khi tạo trình chiếu với Beamer](https://github.com/thiminhnhut/latex/blob/master/beamer/beamer-tips/beamer-handout.md)
+    * [In tài liệu khi tạo trình chiếu với Beamer](https://github.com/thiminhnhut/latex/blob/master/beamer/beamer-tips/beamer-handout.md)
 
 ## Cách sử dụng các gói lệnh
 
 1. [Sagetex - Gói lệnh cho phép nhúng mã Sage vào LaTeX để tính toán tự động](https://github.com/thiminhnhut/latex/tree/master/sagetex)
 
-  * [Sử dụng Sage trong LaTeX với gói lệnh sagetex trên hệ điều hành Ubuntu](https://github.com/thiminhnhut/latex/blob/master/sagetex/make-sagetex-known-to-tex.md)
+    * [Sử dụng Sage trong LaTeX với gói lệnh sagetex trên hệ điều hành Ubuntu](https://github.com/thiminhnhut/latex/blob/master/sagetex/make-sagetex-known-to-tex.md)
 
-  * [Sử dụng Sage và TeXMaker để biên dịch file .tex có nhúng mã Sage với gói lệnh sagetex trên hệ điều hành Ubuntu](https://github.com/thiminhnhut/latex/blob/master/sagetex/sage-texmaker.md)
+    * [Sử dụng Sage và TeXMaker để biên dịch file .tex có nhúng mã Sage với gói lệnh sagetex trên hệ điều hành Ubuntu](https://github.com/thiminhnhut/latex/blob/master/sagetex/sage-texmaker.md)
 
 ## Tips - Các thủ thuật
 
@@ -87,7 +87,7 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 1. [Chuyển dấu chấm thành dấu phẩy với chế độ toán trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/dot2comma-math)
 
 1. [Sử dụng font size mở rộng (24pt, 28pt) trong trình chiếu với Beamer](https://github.com/thiminhnhut/latex/tree/master/tips/font-size-extension-beamer)
-`
+
 1. [Xóa dấu chấm và số trang trong mục lục](https://github.com/thiminhnhut/latex/tree/master/tips/remove-dot-pagenumber-tableofcontents)
 
 1. [Làm cho chiều rộng của bảng vừa với chiều rộng của trang trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/force-a-table-into-page-width)
