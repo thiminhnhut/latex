@@ -56,7 +56,7 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 
 ## Lập trình trong TeX
 
-1. [Cấu trúc điều khiển if](https://github.com/thiminhnhut/latex/blob/master/tex/if-condition/if-condition.md) 
+1. [Cấu trúc điều khiển if](https://github.com/thiminhnhut/latex/blob/master/tex/if-condition/readme.md) 
 
 ## Tạo trình chiếu với Beamer
 
