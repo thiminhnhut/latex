@@ -46,11 +46,17 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 
 **Nội dung của Repository:**
 
+* Lập trình trong TeX:[beamer](https://github.com/thiminhnhut/latex/tree/master/tex)
+
 * Cách tạo bài trình chiếu với Beamer: [beamer](https://github.com/thiminhnhut/latex/tree/master/beamer)
 
 * Cách sử dụng một số gói lệnh hỗ trợ soạn thảo LaTeX.
 
 * Các thủ thuật: [tips](https://github.com/thiminhnhut/latex/tree/master/tips)
+
+## Lập trình trong TeX
+
+1. [Cấu trúc điều khiển if](https://github.com/thiminhnhut/latex/blob/master/tex/if-condition/if-condition.md) 
 
 ## Tạo trình chiếu với Beamer
 
@@ -65,6 +71,10 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
     * [Sử dụng Sage trong LaTeX với gói lệnh sagetex trên hệ điều hành Ubuntu](https://github.com/thiminhnhut/latex/blob/master/sagetex/make-sagetex-known-to-tex.md)
 
     * [Sử dụng Sage và TeXMaker để biên dịch file .tex có nhúng mã Sage với gói lệnh sagetex trên hệ điều hành Ubuntu](https://github.com/thiminhnhut/latex/blob/master/sagetex/sage-texmaker.md)
+
+1. [References and Citations - Tạo tài liệu tham khảo và tham chiếu đến tài liệu tham khảo trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/references-and-citations)
+
+    * [biblatex - Quản lý tài liệu tham khảo trong file .bib](https://github.com/thiminhnhut/latex/tree/master/biblatex)
 
 ## Tips - Các thủ thuật
 

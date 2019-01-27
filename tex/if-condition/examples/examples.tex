@@ -1,0 +1,46 @@
+\documentclass{minimal}
+\begin{document}
+
+
+\ifx\mycmd\undefined
+    undefed
+\else
+    \if\mycmd1
+        defed, 1
+    \else
+        defed
+    \fi
+\fi
+
+% --> output = undefed
+
+\def\mycmd{1}
+
+\ifx\mycmd\undefined
+    undefed
+\else
+    \if\mycmd1
+        defed, 1
+    \else
+        defed
+    \fi
+\fi
+
+% --> output = defed, 1
+
+\def\mycmd{0}
+
+\ifx\mycmd\undefined
+    undefed
+\else
+    \if\mycmd1
+        defed, 1
+    \else
+        defed
+    \fi
+\fi
+
+% --> output = defed
+
+
+\end{document}
