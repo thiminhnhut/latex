@@ -1,0 +1,43 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{vietnam}
+
+\usepackage[fleqn]{amsmath}
+\makeatletter
+\def\endmathdisplay@a{%
+\if@eqnsw \gdef\df@tag{\tagform@\theequation}\fi
+\if@fleqn \ifx\df@label\@empty \else \@xp\ltx@label\@xp{\df@label}\fi\@xp\endmathdisplay@fleqn
+\else \ifx\df@tag\@empty \else \veqno \alt@tag \df@tag \fi
+\ifx\df@label\@empty \else \@xp\ltx@label\@xp{\df@label}\fi
+\fi
+\ifnum\dspbrk@lvl>\m@ne
+\postdisplaypenalty -\@getpen\dspbrk@lvl
+\global\dspbrk@lvl\m@ne
+\fi
+}
+\makeatother
+\newcounter{eqnthing}
+\setcounter{eqnthing}{0}
+\newcommand{\mylabel}[1]{\refstepcounter{eqnthing}\hfill(\arabic{eqnthing})\label{#1}}
+
+\begin{document}  
+\begin{enumerate}
+	\item Cho phương trình $x^2 + 2(m - 1)x + 1 = 0 \mylabel{pt1}$, thực hiện các yêu cầu sau:
+		\begin{enumerate}
+			\item Giải phương trình \eqref{pt1} với $m = 2$.
+			\item Tìm $m$ để phương trình có nghiệm
+		\end{enumerate}
+	
+	\item Cho phương trình $x^2 + 2(m - 1)x + 1 = 0 \mylabel{pt2}$, thực hiện các yêu cầu sau:
+		\begin{enumerate}
+			\item Giải phương trình \eqref{pt2} với $m = 2$.
+			\item Tìm $m$ để phương trình có nghiệm
+		\end{enumerate}
+		
+	\item Cho phương trình $x^2 + 2(m - 1)x + 1 = 0 \mylabel{pt3}$, thực hiện các yêu cầu sau:
+		\begin{enumerate}
+			\item Giải phương trình \eqref{pt3} với $m = 2$.
+			\item Tìm $m$ để phương trình có nghiệm
+		\end{enumerate}
+\end{enumerate}
+
+\end{document}
