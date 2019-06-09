@@ -11,6 +11,6 @@ Thời gian: Ngày 06 tháng 02 năm 2019
 
 ## Nội dung thực hiện
 
-* [Đánh số tự động examples1.tex](https://github.com/thiminhnhut/latex/blob/master/tips/label-ref-equal-mode-math/examples/example1.tex)
+* [Đánh số tự động examples1.tex](https://github.com/thiminhnhut/latex/blob/master/tips/label-ref-equal-mode-math/examples/examples1.tex)
 
-* [Đánh số bất kỳ examples2.tex](https://github.com/thiminhnhut/latex/blob/master/tips/label-ref-equal-mode-math/examples/example2.tex)
+* [Đánh số bất kỳ examples2.tex](https://github.com/thiminhnhut/latex/blob/master/tips/label-ref-equal-mode-math/examples/examples2.tex)

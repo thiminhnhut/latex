@@ -46,7 +46,7 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 
 **Nội dung của Repository:**
 
-* Lập trình trong TeX:[beamer](https://github.com/thiminhnhut/latex/tree/master/tex)
+* Lập trình trong TeX: [tex](https://github.com/thiminhnhut/latex/tree/master/tex)
 
 * Cách tạo bài trình chiếu với Beamer: [beamer](https://github.com/thiminhnhut/latex/tree/master/beamer)
 
