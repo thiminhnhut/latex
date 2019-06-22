@@ -105,3 +105,5 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 1. [Tùy chỉnh tiêu đề của mục lục nằm ở giữa trang trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/tableofcontents-centering)
 
 1. [Đánh số và tạo tham chiếu cho công thức toán trong cặp ngoặc $$](https://github.com/thiminhnhut/latex/tree/master/tips/label-ref-equal-mode-math)
+
+1. [Định dạng text trong phần định lý của LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/theorem)
