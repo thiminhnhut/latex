@@ -109,3 +109,5 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 1. [Định dạng text trong phần định lý của LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/theorem)
 
 1. [LaTeX Page Styles](https://github.com/thiminhnhut/latex/tree/master/tips/pagestyle)
+
+1. [Tạo tham chiếu cho công thức toán học, tên bảng, tên hình trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/label-ref)
