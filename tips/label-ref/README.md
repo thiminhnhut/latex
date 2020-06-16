@@ -6,4 +6,4 @@
 
 ## Hướng dẫn cơ bản
 
-* [examples.pdf](https://github.com/thiminhnhut/latex/tree/master/tips/label-ref/examples.pdf)
+- [example.pdf](https://github.com/thiminhnhut/latex/tree/master/tips/label-ref/example.pdf)
