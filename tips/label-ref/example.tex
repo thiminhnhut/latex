@@ -21,7 +21,7 @@
 
   \section{Tham chiếu công thức toán học}
     \begin{itemize}
-      \item Sử dụng các môi trường \verb|equation, align,...| để viết công thức toán học, rồi đặt lệnh \verb|\label{Name Label}| vào trong mỗi môi trường. Để tham chiếu lại công thức thì dùng lệnh \verb|\ref{Name Label}|.
+      \item Sử dụng các môi trường \verb|equation, align,...| để viết công thức toán học, rồi đặt lệnh \verb|\label{Eq:Name Label}| vào trong mỗi môi trường. Để tham chiếu lại công thức thì dùng lệnh \verb|\ref{Eq:Name Label}|.
       \item Code mẫu:
         \begin{verbatim}
           \begin{equation} \label{Eq:Pytago}
@@ -40,7 +40,7 @@
 
   \section{Tham chiếu hình ảnh}
     \begin{itemize}
-      \item Sử dụng các môi trường \verb|figure| để chèn hình ảnh, rồi đặt lệnh \verb|\label{Name Label}| vào trong mỗi môi trường. Để tham chiếu lại hình ảnh thì dùng lệnh \verb|\ref{Name Label}|.
+      \item Sử dụng các môi trường \verb|figure| để chèn hình ảnh, rồi đặt lệnh \verb|\label{Fig:Name Label}| vào trong mỗi môi trường. Để tham chiếu lại hình ảnh thì dùng lệnh \verb|\ref{Fig:Name Label}|.
       \item Code mẫu:
         \begin{verbatim}
           \begin{figure}[htp]
@@ -66,7 +66,7 @@
 
   \section{Tham chiếu bảng}
     \begin{itemize}
-      \item Sử dụng các môi trường \verb|table| để viết công chèn bảng, rồi đặt lệnh \verb|\label{Name Label}| vào trong mỗi môi trường. Để tham chiếu lại công thức thì dùng lệnh \verb|\ref{Name Label}|.
+      \item Sử dụng các môi trường \verb|table| để viết công chèn bảng, rồi đặt lệnh \verb|\label{Tab:Name Label}| vào trong mỗi môi trường. Để tham chiếu lại bảng thì dùng lệnh \verb|\ref{Tab:Name Label}|.
       \item Code mẫu:
         \begin{verbatim}
           \begin{table}[htp]
@@ -81,7 +81,7 @@
       \item Kết quả cho đoạn code ở trên:
         
       \begin{table}[!htp]
-        \caption{Hình minh họa} \label{Tab:Bang-minh-hoa}
+        \caption{Bảng minh họa} \label{Tab:Bang-minh-hoa}
         \begin{center}
           {
             \renewcommand{\arraystretch}{1.3}
