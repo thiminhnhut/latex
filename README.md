@@ -74,7 +74,7 @@ và tùy chỉnh phù hợp. *Các tài liệu tham khảo đều được ghi r
 
 1. [References and Citations - Tạo tài liệu tham khảo và tham chiếu đến tài liệu tham khảo trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/references-and-citations)
 
-    * [biblatex - Quản lý tài liệu tham khảo trong file .bib](https://github.com/thiminhnhut/latex/tree/master/biblatex)
+    * [biblatex - Quản lý tài liệu tham khảo trong file .bib](https://github.com/thiminhnhut/latex/tree/master/references-and-citations/biblatex/examples)
 
 ## Tips - Các thủ thuật
 
