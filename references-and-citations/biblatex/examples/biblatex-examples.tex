@@ -1,0 +1,47 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+
+% \usepackage[backend=biber,style=alphabetic,sorting=ynt]{biblatex}
+\usepackage[backend=biber,style=numeric,sorting=ynt]{biblatex}
+% \usepackage[backend=biber,style=authoryear,sorting=ynt]{biblatex}
+% \usepackage[backend=biber,style=authortitle,sorting=ynt]{biblatex}
+% \usepackage[backend=biber,style=verbose,sorting=ynt]{biblatex}
+% \usepackage[backend=biber,style=reading,sorting=ynt]{biblatex}
+% \usepackage[backend=biber,style=draft,sorting=ynt]{biblatex}
+\addbibresource{references.bib}
+
+\title{Bibliography management: \texttt{biblatex} package}
+\author{Overleaf}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Demo}
+Using \texttt{biblatex} you can display bibliography divided into sections,
+depending of citation type.
+Let's cite! Einstein's journal paper \cite{einstein} and the Dirac's
+book \cite{dirac} are physics related items.
+Next, \textit{The \LaTeX\ Companion} book \cite{latexcompanion}, the Donald
+Knuth's website \cite{knuthwebsite}, \textit{The Comprehensive Tex Archive
+Network} (CTAN) \cite{ctan} are \LaTeX\ related items; but the others Donald
+Knuth's items \cite{knuth-fa} are dedicated to programming.
+
+\medskip
+
+% \printbibliography[title={Whole bibliography}]
+
+% \printbibliography[type=article,title={Articles only}]
+% \printbibliography[type=book,title={Books only}]
+%
+% \printbibliography[keyword={physics},title={Physics-related only}]
+% \printbibliography[keyword={latex},title={\LaTeX-related only}]
+
+\printbibliography[heading=bibintoc,title={Whole bibliography}]
+
+\end{document}
