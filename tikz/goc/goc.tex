@@ -1,0 +1,26 @@
+\documentclass[12pt,border=5pt]{standalone}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{amsfonts} 
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{positioning,calc}
+
+\begin{document}
+
+\begin{tikzpicture}
+  \def\gO{60}
+  \path
+  (0, 0) coordinate (O) node[left]{$O$}
+  (5, 0) coordinate (x) node[below left]{$x$}
+  (\gO:4) coordinate (y) node[above left]{$y$}
+  (20:5) coordinate (t) node[above left]{$t$};
+
+  \draw (O) -- (x);
+  \draw (O) -- (t);
+  \draw (O) -- (y);
+
+  \foreach \p in {O} \fill (\p) circle (1pt);
+\end{tikzpicture}
+
+\end{document}

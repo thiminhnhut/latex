@@ -1,0 +1,41 @@
+\documentclass[12pt,border=5pt]{standalone}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{amsfonts} 
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+
+\begin{tikzpicture}
+  \def\h{4}
+  \def\w{5}
+  \def\gO{60}
+  \def\gT{\gO/2}
+  \path
+  (0, 0) coordinate (O) node[left]{$O$}
+  (\w, 0) coordinate (x) node[below left]{$x$}
+  (\gO:\h) coordinate (y) node[above left]{$y$}
+  (\gT:\w) coordinate (t) node[above left]{$t$};
+
+  \draw (O) -- (x);
+  \draw (O) -- (t);
+  \draw (O) -- (y);
+
+  \begin{scope}
+    \clip (x)--(O)--(t);
+    \draw (O) circle(.5);
+    \draw (O) circle(.6);
+  \end{scope}
+
+  \begin{scope}
+    \clip (y)--(O)--(t);
+    \draw (O) circle(.5);
+    \draw (O) circle(.6);
+  \end{scope}
+
+  \foreach \p in {O} \fill (\p) circle (1pt);
+\end{tikzpicture}
+
+\end{document}

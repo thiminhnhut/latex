@@ -1,0 +1,29 @@
+\documentclass[12pt,border=5pt]{standalone}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{amsfonts} 
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{positioning, calc}
+
+\begin{document}
+
+\begin{tikzpicture}
+  \def\h{3}
+  \def\w{3}
+  \def\gO{180}
+  \def\gT{\gO/3}
+  \path
+  (0, 0) coordinate (O) node[below]{$O$}
+  (\w, 0) coordinate (y) node[below left]{$y$}
+  (\gO:\h) coordinate (x) node[above left]{$x$}
+  (\gT:\w) coordinate (t) node[above left]{$t$};
+
+  \draw (O) -- (x);
+  \draw (O) -- (t);
+  \draw (O) -- (y);
+
+  \foreach \p in {O} \fill (\p) circle (1pt);
+\end{tikzpicture}
+
+\end{document}
