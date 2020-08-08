@@ -111,3 +111,5 @@ và tùy chỉnh phù hợp. _Các tài liệu tham khảo đều được ghi r
 1. [LaTeX Page Styles](https://github.com/thiminhnhut/latex/tree/master/tips/pagestyle)
 
 1. [Tạo tham chiếu cho công thức toán học, tên bảng, tên hình trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/label-ref)
+
+1. [Multiple file template article](https://github.com/thiminhnhut/latex/tree/master/tips/multi-file/template-article)
