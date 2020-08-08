@@ -1,0 +1,19 @@
+\documentclass[12pt,a4paper,class=article,crop=false]{standalone}
+\usepackage[subpreambles=true]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+\usepackage[margin=1in]{geometry}
+\usepackage[textfont={it},labelfont={bf}]{caption}
+\usepackage{indentfirst}
+\usepackage{import}
+
+\begin{document}
+\section{First Section}
+Chèn hình vẽ bằng Tikz:
+\begin{figure}[htp]
+  \begin{center}
+    \subimport{diagram/}{tikz-example.tex}
+  \end{center}
+  \caption{Chèn hình được vẽ từ file Tikz}
+\end{figure}
+\end{document}

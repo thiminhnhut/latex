@@ -1,0 +1,23 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[subpreambles=true]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+\usepackage{import}
+% \usepackage{bookmark}
+\usepackage[textfont={it},labelfont={bf},skip=0pt]{caption}
+% \usepackage[margin=1in]{geometry}
+
+\title{\bfseries Template Article \LaTeX}
+\author{Thực hiện: Thi Minh Nhựt (Email: \texttt{thiminhnhut@gmail.com})}
+\date{Thời gian: Ngày 08 tháng 08 năm 2020}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\import{sections/}{first_section}
+\import{sections/}{second_section}
+
+\end{document}
