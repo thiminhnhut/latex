@@ -39,7 +39,7 @@
 
   \begin{document}
 
-  \import{sections/}{first_section}
+  \subimport{sections/}{first_section.tex}
 
   \end{document}
   ```

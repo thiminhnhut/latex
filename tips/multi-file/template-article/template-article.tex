@@ -3,9 +3,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[utf8]{vietnam}
 \usepackage{import}
-% \usepackage{bookmark}
 \usepackage[textfont={it},labelfont={bf},skip=0pt]{caption}
-% \usepackage[margin=1in]{geometry}
+\usepackage[margin=1in]{geometry}
 
 \title{\bfseries Template Article \LaTeX}
 \author{Thực hiện: Thi Minh Nhựt (Email: \texttt{thiminhnhut@gmail.com})}
@@ -17,7 +16,7 @@
 
 \tableofcontents
 
-\import{sections/}{first_section}
-\import{sections/}{second_section}
+\subimport{sections/}{first_section.tex}
+\subimport{sections/}{second_section.tex}
 
 \end{document}
