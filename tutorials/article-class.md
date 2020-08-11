@@ -21,5 +21,3 @@
 
   \end{document}
   ```
-
-- Phần nội dung được đặt bên dưới các `section`, `subsection`, `subsubsection.
