@@ -46,6 +46,8 @@ và tùy chỉnh phù hợp. _Các tài liệu tham khảo đều được ghi r
 
 **Nội dung của Repository:**
 
+- LaTeX tutorial: [tutorial](https://github.com/thiminhnhut/latex/tree/master/tutorial)
+
 - Lập trình trong TeX: [tex](https://github.com/thiminhnhut/latex/tree/master/tex)
 
 - Cách tạo bài trình chiếu với Beamer: [beamer](https://github.com/thiminhnhut/latex/tree/master/beamer)
@@ -53,6 +55,26 @@ và tùy chỉnh phù hợp. _Các tài liệu tham khảo đều được ghi r
 - Cách sử dụng một số gói lệnh hỗ trợ soạn thảo LaTeX.
 
 - Các thủ thuật: [tips](https://github.com/thiminhnhut/latex/tree/master/tips)
+
+## LaTeX Tutorial
+
+1. [Cài đặt TeXLive](https://github.com/thiminhnhut/latex/tree/master/tutorials/caidat-texlive.md)
+
+1. [Cài đặt IDE VSCode để lập trình LaTeX](https://github.com/thiminhnhut/latex/tree/master/tutorials/vscode-latex.md)
+
+1. [LaTeX Document Class](https://github.com/thiminhnhut/latex/tree/master/tutorials/vscode-latex.md)
+
+1. [Cấu trúc của file LaTeX](https://github.com/thiminhnhut/latex/tree/master/tutorials/latex-structure.md)
+
+1. [LaTeX Article Class](https://github.com/thiminhnhut/latex/tree/master/tutorials/article-class.md)
+
+1. [LaTeX Report Class](https://github.com/thiminhnhut/latex/tree/master/tutorials/report-class.md)
+
+1. [LaTeX Book Class](https://github.com/thiminhnhut/latex/tree/master/tutorials/book-class.md)
+
+1. [Document Title](https://github.com/thiminhnhut/latex/tree/master/tutorials/document-title.md)
+
+1. [Quy trình soạn thảo tài liệu LaTeX trên VScode](https://github.com/thiminhnhut/latex/tree/master/tutorials/latex-workflow.md)
 
 ## Lập trình trong TeX
 
@@ -104,7 +126,7 @@ và tùy chỉnh phù hợp. _Các tài liệu tham khảo đều được ghi r
 
 1. [Tùy chỉnh tiêu đề của mục lục nằm ở giữa trang trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/tableofcontents-centering)
 
-1. [Đánh số và tạo tham chiếu cho công thức toán trong cặp ngoặc \$\$](https://github.com/thiminhnhut/latex/tree/master/tips/label-ref-equal-mode-math)
+1. [Đánh số và tạo tham chiếu cho công thức toán trong cặp ngoặc \\\\\\\\$\$](https://github.com/thiminhnhut/latex/tree/master/tips/label-ref-equal-mode-math)
 
 1. [Định dạng text trong phần định lý của LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/theorem)
 
