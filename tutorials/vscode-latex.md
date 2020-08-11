@@ -19,3 +19,20 @@
 1. LaTeX Preview
 
 1. .gitignore Generator
+
+## Sử dụng IDE VSCode để biên dịch file LaTeX ra PDF
+
+- Lệnh biên dịch: `Ctrl + Alt + B`.
+
+- Xem kết quả ở file PDF: `Ctrl + Alt + V`.
+
+  ![VSCode and LaTeX](images/vscode-latex.png)
+
+- Lựa chọn cách build file LaTeX ra PDF, đặt một trong những macro này ở đầu file tex.
+
+  ```tex
+  % !TEX program = latexmk
+  % !TEX program = pdflatex
+  % !TEX program = xelatex
+  ...
+  ```
