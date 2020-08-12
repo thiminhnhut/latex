@@ -74,6 +74,12 @@ và tùy chỉnh phù hợp. _Các tài liệu tham khảo đều được ghi r
 
 1. [Document Title](https://github.com/thiminhnhut/latex/tree/master/tutorials/document-title.md)
 
+1. [Sử dụng label và ref tạo các tham chiếu](https://github.com/thiminhnhut/latex/tree/master/tutorials/label-ref.md)
+
+1. [Chèn hình](https://github.com/thiminhnhut/latex/tree/master/tutorials/insert-figure.md)
+
+1. [Chèn bảng](https://github.com/thiminhnhut/latex/tree/master/tutorials/insert-table.md)
+
 1. [Quy trình soạn thảo tài liệu LaTeX trên VScode](https://github.com/thiminhnhut/latex/tree/master/tutorials/latex-workflow.md)
 
 ## Lập trình trong TeX
@@ -126,7 +132,7 @@ và tùy chỉnh phù hợp. _Các tài liệu tham khảo đều được ghi r
 
 1. [Tùy chỉnh tiêu đề của mục lục nằm ở giữa trang trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/tableofcontents-centering)
 
-1. [Đánh số và tạo tham chiếu cho công thức toán trong cặp ngoặc \\\\\\\\$\$](https://github.com/thiminhnhut/latex/tree/master/tips/label-ref-equal-mode-math)
+1. [Đánh số và tạo tham chiếu cho công thức toán trong cặp ngoặc \\\\\\\\\\$\$](https://github.com/thiminhnhut/latex/tree/master/tips/label-ref-equal-mode-math)
 
 1. [Định dạng text trong phần định lý của LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/theorem)
 
