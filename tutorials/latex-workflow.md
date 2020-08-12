@@ -14,7 +14,7 @@
 
 1. Tạo các file `subfile.tex`.
 
-1. Viết nội dung cho các file `subfile.tex`.
+1. Viết nội dung cho các file `subfile.tex` và format các `subfile.tex` (sử dụng tổ hợp phím `Shift + Alt + F`).
 
 1. Import các file `subfile.tex` vào file `main.tex`.
 
