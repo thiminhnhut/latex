@@ -80,6 +80,10 @@ và tùy chỉnh phù hợp. _Các tài liệu tham khảo đều được ghi r
 
 1. [Chèn bảng](https://github.com/thiminhnhut/latex/tree/master/tutorials/insert-table.md)
 
+1. [Tạo danh sách trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tutorials/lists.md)
+
+1. [Format text trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tutorials/format-text.md)
+
 1. [Quy trình soạn thảo tài liệu LaTeX trên VScode](https://github.com/thiminhnhut/latex/tree/master/tutorials/latex-workflow.md)
 
 ## Lập trình trong TeX
