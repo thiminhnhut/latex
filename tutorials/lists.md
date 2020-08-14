@@ -59,18 +59,18 @@
   - Cú pháp:
 
     ```tex
-    \renewcommand{\theenumi}{\alph{enumi}}
+    \renewcommand{\labelenumi}{\alph{enumi}}
     ```
 
   - Giải thích:
 
-    - `theenumi` và `enumi`: môi trường enumerate cho cấp 1.
+    - `labelenumi` và `enumi`: môi trường enumerate cho cấp 1.
 
-    - `theenumii` và `enumii`: môi trường enumerate cho cấp 2.
+    - `labelenumii` và `enumii`: môi trường enumerate cho cấp 2.
 
-    - `theenumiv` và `enumiv`: môi trường enumerate cho cấp 3.
+    - `labelenumiii` và `enumiv`: môi trường enumerate cho cấp 3.
 
-    - `theenumiv` và `enumiv`: môi trường enumerate cho cấp 4.
+    - `labelenumiv` và `enumiv`: môi trường enumerate cho cấp 4.
 
     - Phần format cách đánh số `{\alph{enumi}}`.
 
