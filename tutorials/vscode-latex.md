@@ -14,10 +14,6 @@
 
 1. LaTeX Workshop
 
-1. LaTeX language support
-
-1. LaTeX Preview
-
 1. .gitignore Generator
 
 ## Sử dụng IDE VSCode để biên dịch file LaTeX ra PDF
