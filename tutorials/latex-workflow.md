@@ -1,4 +1,4 @@
-# Quy trình soạn thảo tài liệu LaTeX trên VScode
+# Quy trình soạn thảo tài liệu LaTeX trên VSCode
 
 - **Thực hiện:** Thi Minh Nhựt - **Email:** thiminhnhut@gmail.com
 

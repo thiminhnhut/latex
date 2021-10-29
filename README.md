@@ -62,7 +62,7 @@ và tùy chỉnh phù hợp. _Các tài liệu tham khảo đều được ghi r
 
 1. [Cài đặt IDE VSCode để lập trình LaTeX](https://github.com/thiminhnhut/latex/tree/master/tutorials/vscode-latex.md)
 
-1. [LaTeX Document Class](https://github.com/thiminhnhut/latex/tree/master/tutorials/vscode-latex.md)
+1. [LaTeX Document Class](https://github.com/thiminhnhut/latex/tree/master/tutorials/latex-document-class.md)
 
 1. [Cấu trúc của file LaTeX](https://github.com/thiminhnhut/latex/tree/master/tutorials/latex-structure.md)
 
@@ -84,7 +84,7 @@ và tùy chỉnh phù hợp. _Các tài liệu tham khảo đều được ghi r
 
 1. [Format text trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tutorials/format-text.md)
 
-1. [Quy trình soạn thảo tài liệu LaTeX trên VScode](https://github.com/thiminhnhut/latex/tree/master/tutorials/latex-workflow.md)
+1. [Quy trình soạn thảo tài liệu LaTeX trên VSCode](https://github.com/thiminhnhut/latex/tree/master/tutorials/latex-workflow.md)
 
 ## Lập trình trong TeX
 
@@ -136,7 +136,7 @@ và tùy chỉnh phù hợp. _Các tài liệu tham khảo đều được ghi r
 
 1. [Tùy chỉnh tiêu đề của mục lục nằm ở giữa trang trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/tableofcontents-centering)
 
-1. [Đánh số và tạo tham chiếu cho công thức toán trong cặp ngoặc \\\\\\\\\\$\$](https://github.com/thiminhnhut/latex/tree/master/tips/label-ref-equal-mode-math)
+1. [Đánh số và tạo tham chiếu cho công thức toán trong cặp ngoặc $$](https://github.com/thiminhnhut/latex/tree/master/tips/label-ref-equal-mode-math)
 
 1. [Định dạng text trong phần định lý của LaTeX](https://github.com/thiminhnhut/latex/tree/master/tips/theorem)
 
