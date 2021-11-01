@@ -88,6 +88,8 @@ và tùy chỉnh phù hợp. _Các tài liệu tham khảo đều được ghi r
 
    1. [Soạn thảo ký tự Hy Lạp toán trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tutorials/greek-letters/greek-letters.md)
 
+   1. [Soạn thảo các dấu mũi tên trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tutorials/arrow/arrow.md)
+
 1. [Quy trình soạn thảo tài liệu LaTeX trên VSCode](https://github.com/thiminhnhut/latex/tree/master/tutorials/latex-workflow.md)
 
 ## Lập trình trong TeX
