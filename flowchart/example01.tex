@@ -1,0 +1,48 @@
+\documentclass[border=12pt]{standalone}
+\usepackage[utf8]{vietnam}
+
+\usepackage{flowchart}
+\usetikzlibrary{arrows}
+
+\begin{document}
+
+\begin{tikzpicture}
+    \def\smbwd{3cm}
+    \def\smbht{0.5cm}
+
+    \node (begin) at (0, 0) [draw, terminal,
+        minimum width=\smbwd,
+        minimum height=\smbht] {Begin};
+
+    \node (input) at (0, -2) [draw, storage,
+        minimum width=\smbwd,
+        minimum height=\smbht] {Nhập vào số $n$};
+
+    \node (decision) at (0, -5) [draw, decision,
+        minimum width=\smbwd,
+        minimum height=\smbht] {$n$ chia hết cho 2?};
+
+    \node (output_1) at (0, -8) [draw, storage,
+        minimum width=\smbwd,
+        minimum height=\smbht] {$n$ là số chẳn};
+
+    \node (output_2) at (4, -8) [draw, storage,
+        minimum width=\smbwd,
+        minimum height=\smbht] {$n$ là số lẻ};
+
+    \node (end) at (0, -10) [draw, terminal,
+        minimum width=\smbwd,
+        minimum height=\smbht] {End};
+
+    \coordinate (point_end) at (0, -9);
+
+    \draw [->] (begin) -- (input);
+    \draw [->] (input) -- (decision);
+    \draw [->] (decision) -| node[above left]{Sai} (output_2);
+    \draw [->] (decision) -- node[right]{Đúng} (output_1);
+    \draw [->] (output_1) -- (end);
+    \draw [->] (output_2) |- (point_end);
+
+\end{tikzpicture}
+
+\end{document}

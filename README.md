@@ -114,6 +114,8 @@ và tùy chỉnh phù hợp. _Các tài liệu tham khảo đều được ghi r
 
    - [biblatex - Quản lý tài liệu tham khảo trong file .bib](https://github.com/thiminhnhut/latex/tree/master/references-and-citations/biblatex/examples)
 
+1. [flowchar - Vẽ lưu đồ giải thuật với package flowchart](https://github.com/thiminhnhut/latex/tree/master/flowchart)
+
 ## Tips - Các thủ thuật
 
 1. [Cài đặt TeXLive và TeXMaker để biên dịch tài liệu LaTeX trên hệ điều hành Ubuntu](https://github.com/thiminhnhut/ubuntu/blob/master/application/latex/caidat-texlive-texmaker.md)

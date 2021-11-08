@@ -1,0 +1,34 @@
+\documentclass[border=12pt]{standalone}
+\usepackage[utf8]{vietnam}
+
+\usepackage{flowchart}
+\usetikzlibrary{arrows}
+
+\begin{document}
+
+\begin{tikzpicture}
+    \def\smbwd{3cm}
+    \def\smbht{0.5cm}
+
+    \node (process) at (0, 0) [draw, process,
+        minimum width=\smbwd,
+        minimum height=\smbht] {Khối xử lý};
+
+    \node (decision) at (0,-2) [draw, decision,
+        minimum width=\smbwd,
+        minimum height=\smbht] {Khối điều kiện};
+
+    \node (predproc) at (0,-4) [draw, predproc,
+        minimum width=\smbwd,
+        minimum height=\smbht] {Khối chương trình con};
+
+    \node (terminal) at (0,-5) [draw, terminal,
+        minimum width=\smbwd,
+        minimum height=\smbht] {Khối Begin/End};
+
+    \node (storage) at (0,-6) [draw, storage,
+        minimum width=\smbwd,
+        minimum height=\smbht] {Khối Input/Ouput};
+\end{tikzpicture}
+
+\end{document}
