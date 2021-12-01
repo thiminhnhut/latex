@@ -4,9 +4,9 @@
 % according to http://www.latex-project.org/lppl.txt
 
 \ifx\ProvidesFile\undefined \else
-  \ProvidesFile{vncaps.tex}[2006/06/07 v1.1 Captions in Vietnamese]  
+  \ProvidesFile{vncaps.tex}[2006/06/07 v1.1 Captions in Vietnamese]
 \fi
- 
+
 % Vietnamese captions; edit them in viscii/tcvn/utf8, then use
 % `vntovn viscii vntex' or a similar command to convert to vntex.
 %
@@ -27,16 +27,16 @@
   \let\providecommand \def
 \fi
 
-\providecommand\captionsvietnam{% 
+\providecommand\captionsvietnam{%
   \def\prefacename{L\`\ohorn i n\'oi \dj\`\acircumflex u}%
   %\def\refname{T\`ai li\d\ecircumflex u}%
   \def\refname{T{\`a}i li\IeC {\d \ecircumflex }u tham kh\IeC {\h a}o}
   \def\abstractname{T\'om t\'\abreve t n\d\ocircumflex i dung}%
   \def\bibname{T\`ai li\d\ecircumflex u tham kh\h{a}o}%
-  \def\chaptername{Ch\uhorn \ohorn ng}%  
+  \def\chaptername{Ch\uhorn \ohorn ng}%
   \def\appendixname{Ph\d{u} l\d{u}c}%
   %\def\contentsname{M\d{u}c l\d{u}c}%
- \def\contentsname{N{\d \ocircumflex }i dung}
+  \def\contentsname{N{\d \ocircumflex }i dung}
   \def\listfigurename{Danh s\'ach h\`inh v\~e}%
   \def\listtablename{Danh s\'ach b\h{a}ng}%
   \def\indexname{Ch\h{i} m\d{u}c}%
@@ -85,19 +85,19 @@
 \providecommand\dateenglish{%
   \def\today{%
     \ifcase\day\or 1st\or 2nd\or 3rd\or 4th\or 5th\or 6th\or 7th\or
-    8th\or 9th\or 10th\or 11th\or 12th\or 13th\or 14th\or 15th\or
-    16th\or 17th\or 18th\or 19th\or 20th\or 21st\or 22nd\or 23rd\or
-    24th\or 25th\or 26th\or 27th\or 28th\or 29th\or 30th\or 31st\fi
+      8th\or 9th\or 10th\or 11th\or 12th\or 13th\or 14th\or 15th\or
+      16th\or 17th\or 18th\or 19th\or 20th\or 21st\or 22nd\or 23rd\or
+      24th\or 25th\or 26th\or 27th\or 28th\or 29th\or 30th\or 31st\fi
     ~\ifcase\month\or January\or February\or March\or April\or May\or
-    June\or July\or August\or September\or October\or November\or
-    December\fi \space
+      June\or July\or August\or September\or October\or November\or
+      December\fi \space
     \number\year}}
 
 \providecommand\dateUSenglish{%
   \def\today{%
     \ifcase\month\or January\or February\or March\or April\or May\or
-    June\or July\or August\or September\or October\or November\or
-    December\fi \space\number\day, \number\year}}
+      June\or July\or August\or September\or October\or November\or
+      December\fi \space\number\day, \number\year}}
 
 \endinput
 

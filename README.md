@@ -114,7 +114,7 @@ và tùy chỉnh phù hợp. _Các tài liệu tham khảo đều được ghi r
 
    - [biblatex - Quản lý tài liệu tham khảo trong file .bib](https://github.com/thiminhnhut/latex/tree/master/references-and-citations/biblatex/examples)
 
-1. [flowchar - Vẽ lưu đồ giải thuật với package flowchart](https://github.com/thiminhnhut/latex/tree/master/flowchart)
+1. [flowchart - Vẽ lưu đồ giải thuật với package flowchart](https://github.com/thiminhnhut/latex/tree/master/flowchart)
 
 ## Tips - Các thủ thuật
 

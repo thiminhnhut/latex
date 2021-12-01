@@ -5,11 +5,11 @@
 \usepackage[nodayofweek]{datetime}		% Định dạng cách hiển thị thời gian
 \usepackage[unicode,hidelinks=true]{hyperref} 	% Tạo các siêu liên kết
 \hypersetup{pdftitle={Sử dụng tiếng Việt trong gói lệnh listings},
-	pdfauthor={Thi Minh Nhựt},
-	pdfsubject={LaTeX Tutorials},
-	pdfkeywords={latex, listings, unicode listings latex},
-	bookmarks=true,
-	bookmarksopen=true
+  pdfauthor={Thi Minh Nhựt},
+  pdfsubject={LaTeX Tutorials},
+  pdfkeywords={latex, listings, unicode listings latex},
+  bookmarks=true,
+  bookmarksopen=true
 }
 
 \usepackage[vietnamese.licr]{babel}	% Khai báo ngôn ngữ Vietnamese
@@ -22,17 +22,17 @@
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
 \lstset{frame=tb,
-	language=TeX,
-	aboveskip=3mm,
-	belowskip=3mm,
-	showstringspaces=false,
-	basicstyle={\small\ttfamily},
-	numbers=left,
-	numberstyle=\tiny\color{gray},
-	breaklines=true,
-	captionpos=t,
-	breakatwhitespace=true,
-	tabsize=2
+  language=TeX,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  breaklines=true,
+  captionpos=t,
+  breakatwhitespace=true,
+  tabsize=2
 }
 \usepackage[utf8]{vietnam}
 
@@ -45,59 +45,59 @@
 \tableofcontents
 
 \begin{thebibliography}{99}
-	\bibitem{listings-ctan} \href{https://www.ctan.org/author/moses}{\textbf{Brooks Moses}}, \href{https://www.ctan.org/author/heinz}{\textbf{Carsten Heinz}}, \href{https://www.ctan.org/author/hoffmann}{\textbf{Jobst Hoffmann}}, \href{https://www.ctan.org/pkg/listings}{\emph{listings – Typeset source code listings using LaTeX}}, \href{https://www.ctan.org/}{CTAN -- Comprehensive TEX Archive Network}, Version 1.6.
-	
-	\bibitem{listings-stackexchange} Aks: \href{https://goo.gl/9VxuIW}{\textbf{Hunsu}} -- Answered: \href{https://goo.gl/3fO9ec}{\textbf{jpayansomet}}, \href{https://goo.gl/8yvdB2}{\emph{lstlisting environment with UTF-8 encoding [duplicate]}}, \href{http://tex.stackexchange.com/}{TeX - LaTeX Stack Exchange}, \formatdate{25}{05}{2014}.
-	
-	\bibitem{vietnamese-ctan} \href{https://www.ctan.org/author/lemberg}{\textbf{Werner Lemberg}}, \href{https://www.ctan.org/author/kotucha}{\textbf{Reinhard Kotucha}}, \href{https://www.ctan.org/author/bezos}{\textbf{Javier Bezos}}, \href{https://www.ctan.org/pkg/babel-vietnamese}{\emph{babel-vietnamese – Babel support for typesetting Vietnamese}}, \href{https://www.ctan.org/}{CTAN -- Comprehensive TEX Archive Network}, \formatdate{31}{12}{2015}.
+  \bibitem{listings-ctan} \href{https://www.ctan.org/author/moses}{\textbf{Brooks Moses}}, \href{https://www.ctan.org/author/heinz}{\textbf{Carsten Heinz}}, \href{https://www.ctan.org/author/hoffmann}{\textbf{Jobst Hoffmann}}, \href{https://www.ctan.org/pkg/listings}{\emph{listings – Typeset source code listings using LaTeX}}, \href{https://www.ctan.org/}{CTAN -- Comprehensive TEX Archive Network}, Version 1.6.
+
+  \bibitem{listings-stackexchange} Aks: \href{https://goo.gl/9VxuIW}{\textbf{Hunsu}} -- Answered: \href{https://goo.gl/3fO9ec}{\textbf{jpayansomet}}, \href{https://goo.gl/8yvdB2}{\emph{lstlisting environment with UTF-8 encoding [duplicate]}}, \href{http://tex.stackexchange.com/}{TeX - LaTeX Stack Exchange}, \formatdate{25}{05}{2014}.
+
+  \bibitem{vietnamese-ctan} \href{https://www.ctan.org/author/lemberg}{\textbf{Werner Lemberg}}, \href{https://www.ctan.org/author/kotucha}{\textbf{Reinhard Kotucha}}, \href{https://www.ctan.org/author/bezos}{\textbf{Javier Bezos}}, \href{https://www.ctan.org/pkg/babel-vietnamese}{\emph{babel-vietnamese – Babel support for typesetting Vietnamese}}, \href{https://www.ctan.org/}{CTAN -- Comprehensive TEX Archive Network}, \formatdate{31}{12}{2015}.
 \end{thebibliography}
 
 \section{Giới thiệu}
-	Để chèn code vào tài liệu \LaTeX\, chúng ta sử dụng gói lệnh \verb|listings|~\cite{listings-ctan} với nhiều tùy chọn giúp cho việc thực hiện dễ dàng và linh động hơn.\\
-	
-	Tuy nhiên muốn sử dụng gói lệnh \verb|listings| để chèn những ký hiệu đặc biệt (ví dụ những ký tự trong tiếng Việt,\ldots) thì chúng ta cần cài đặt tùy chọn \verb|literate| trong lệnh \verb|lstset|.\\
-	
-	Phần hướng dẫn bên dưới đã được thực hành thành công với phiên bản \TeX Live 2015 được cài đặt trên hệ điều hành Ubuntu 16.04 và sử dụng trình soạn thảo \TeX Maker để biên dịch với PDF \LaTeX. \\
-	
-	File \TeX\ của bài hướng dẫn được lưu ở địa chỉ \url{https://github.com/thiminhnhut/latex/tree/master/tips/listings/tiengviet-trong-listings}, chúng ta có thể dùng các file này để làm mẫu thực hiện soạn theo.
+Để chèn code vào tài liệu \LaTeX\, chúng ta sử dụng gói lệnh \verb|listings|~\cite{listings-ctan} với nhiều tùy chọn giúp cho việc thực hiện dễ dàng và linh động hơn.\\
+
+Tuy nhiên muốn sử dụng gói lệnh \verb|listings| để chèn những ký hiệu đặc biệt (ví dụ những ký tự trong tiếng Việt,\ldots) thì chúng ta cần cài đặt tùy chọn \verb|literate| trong lệnh \verb|lstset|.\\
+
+Phần hướng dẫn bên dưới đã được thực hành thành công với phiên bản \TeX Live 2015 được cài đặt trên hệ điều hành Ubuntu 16.04 và sử dụng trình soạn thảo \TeX Maker để biên dịch với PDF \LaTeX. \\
+
+File \TeX\ của bài hướng dẫn được lưu ở địa chỉ \url{https://github.com/thiminhnhut/latex/tree/master/tips/listings/tiengviet-trong-listings}, chúng ta có thể dùng các file này để làm mẫu thực hiện soạn theo.
 
 \section{Sử dụng tiếng Việt trong gói lệnh listings}
-	\begin{itemize}
-		\item Cần khai báo các gói lệnh sau:
-			\begin{verbatim}
-				\usepackage[vietnamese.licr]{babel}
-				\usepackage{listings}
-				\usepackage{tvietlistings}				
-			\end{verbatim}
-				\begin{itemize}					
-					\item Gói lệnh \verb|babel-vietnamese|~\cite{vietnamese-ctan} được tải ở địa chỉ \url{https://www.ctan.org/pkg/babel-vietnamese}
-					
-					\item Gói lệnh \verb|listings|~\cite{listings-ctan} được tải ở địa chỉ \url{https://www.ctan.org/pkg/listings}
-					
-					\item File \verb|tvietlistings.sty| dùng cài đặt ký tự tiếng Việt khi dùng gói lệnh \verb|listings| để chèn code, nội dung của file được tải ở địa chỉ: \url{https://github.com/thiminhnhut/latex/tree/master/tips/listings/tiengviet-trong-listings/tvietlistings.sty}. Tải file \verb|tvietlistings.sty| về đặt trong thư mục chung với file \verb|.tex| đang soạn.
-				\end{itemize}
-			
-			\item Lưu ý: Hạn chế dùng tùy chọn \verb|columns| với \verb|columns=flexible| hoặc \verb|fullflexible| (vì một số chữ tiếng Việt sẽ bị dính vào nhau), tùy chọn \verb|columns=fixed| vẫn hoạt động tốt.
-			\item Ví dụ:
-				\begin{itemize}
-					\item Sử dụng môi trường \verb|lstlisting| để chèn code:
-						\begin{verbatim}
-							\begin{lstlisting}[language=Ngôn ngữ]
-							  Chèn các dòng code vào đây
-							\end{lstlisting}
-						\end{verbatim}
-					\item Sử dụng lệnh \verb|\lstinputlisting[language=Ngôn ngữ]{file-code}| để chèn code từ một file bên ngoài vào tài liệu.
-					
-					\item Sử dụng lệnh \verb|\lstinline{chèn code vào đây}| để chèn code trên một dòng của tài liệu.
-				\end{itemize}
-	\end{itemize}
+\begin{itemize}
+  \item Cần khai báo các gói lệnh sau:
+        \begin{verbatim}
+        \usepackage[vietnamese.licr]{babel}
+        \usepackage{listings}
+        \usepackage{tvietlistings}
+      \end{verbatim}
+        \begin{itemize}
+          \item Gói lệnh \verb|babel-vietnamese|~\cite{vietnamese-ctan} được tải ở địa chỉ \url{https://www.ctan.org/pkg/babel-vietnamese}
+
+          \item Gói lệnh \verb|listings|~\cite{listings-ctan} được tải ở địa chỉ \url{https://www.ctan.org/pkg/listings}
+
+          \item File \verb|tvietlistings.sty| dùng cài đặt ký tự tiếng Việt khi dùng gói lệnh \verb|listings| để chèn code, nội dung của file được tải ở địa chỉ: \url{https://github.com/thiminhnhut/latex/tree/master/tips/listings/tiengviet-trong-listings/tvietlistings.sty}. Tải file \verb|tvietlistings.sty| về đặt trong thư mục chung với file \verb|.tex| đang soạn.
+        \end{itemize}
+
+  \item Lưu ý: Hạn chế dùng tùy chọn \verb|columns| với \verb|columns=flexible| hoặc \verb|fullflexible| (vì một số chữ tiếng Việt sẽ bị dính vào nhau), tùy chọn \verb|columns=fixed| vẫn hoạt động tốt.
+  \item Ví dụ:
+        \begin{itemize}
+          \item Sử dụng môi trường \verb|lstlisting| để chèn code:
+                \begin{verbatim}
+              \begin{lstlisting}[language=Ngôn ngữ]
+                Chèn các dòng code vào đây
+              \end{lstlisting}
+            \end{verbatim}
+          \item Sử dụng lệnh \verb|\lstinputlisting[language=Ngôn ngữ]{file-code}| để chèn code từ một file bên ngoài vào tài liệu.
+
+          \item Sử dụng lệnh \verb|\lstinline{chèn code vào đây}| để chèn code trên một dòng của tài liệu.
+        \end{itemize}
+\end{itemize}
 
 \section{Cài đặt tùy chọn literate trong lệnh lstset để hiển thị các ký tự đặc biệt}
-	\begin{itemize}
-		\item Ví dụ để định nghĩa các ký tự đặc biệt, chúng ta sử dụng cú pháp sau~\cite{listings-stackexchange}:
-\begin{lstlisting}
+\begin{itemize}
+  \item Ví dụ để định nghĩa các ký tự đặc biệt, chúng ta sử dụng cú pháp sau~\cite{listings-stackexchange}:
+        \begin{lstlisting}
 \lstset{literate=%
-    {á}{{\'a}}1 
+    {á}{{\'a}}1
     {é}{{\'e}}1
     {è}{{\`e}}1
     {í}{{\'i}}1
@@ -106,6 +106,6 @@
 }
 \end{lstlisting}
 
-		\item Thực hiện tương tự cho các ký tự còn lại trong tiếng Việt, chúng ta có các định nghĩa trong file \verb|tvietlistings.sty|, được lưu ở địa chỉ: \url{https://github.com/thiminhnhut/latex/tree/master/tips/listings/tiengviet-trong-listings/tvietlistings.sty}
-	\end{itemize}
+  \item Thực hiện tương tự cho các ký tự còn lại trong tiếng Việt, chúng ta có các định nghĩa trong file \verb|tvietlistings.sty|, được lưu ở địa chỉ: \url{https://github.com/thiminhnhut/latex/tree/master/tips/listings/tiengviet-trong-listings/tvietlistings.sty}
+\end{itemize}
 \end{document}

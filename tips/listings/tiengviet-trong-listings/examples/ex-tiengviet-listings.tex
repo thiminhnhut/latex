@@ -4,11 +4,11 @@
 \usepackage[margin=.75in]{geometry}
 \usepackage[unicode,hidelinks=true]{hyperref} 	% Tạo các siêu liên kết
 \hypersetup{pdftitle={Ví dụ sử dụng tiếng Việt trong gói lệnh listings},
-	pdfauthor={Thi Minh Nhựt},
-	pdfsubject={LaTeX Tutorials},
-	pdfkeywords={latex, listings, unicode listings latex},
-	bookmarks=true,
-	bookmarksopen=true
+  pdfauthor={Thi Minh Nhựt},
+  pdfsubject={LaTeX Tutorials},
+  pdfkeywords={latex, listings, unicode listings latex},
+  bookmarks=true,
+  bookmarksopen=true
 }
 
 \usepackage[vietnamese.licr]{babel}
@@ -24,22 +24,22 @@
 \definecolor{keywords}{rgb}{0.1, 0.1, 0.44}
 \definecolor{strings}{rgb}{0.58,0,0.82}
 \lstset{language=Python,
-	aboveskip=3mm,
-	belowskip=3mm,
-	showstringspaces=false,
-	%columns=flexible,
-	%columns=fixed,
-	%columns=fullflexible,
-	basicstyle={\small\ttfamily},
-	numbers=left,
-	numberstyle=\tiny\color{gray},
-	keywordstyle=\ttb\color{keywords},
-	commentstyle=\color{comments},
-	stringstyle=\color{strings},
-	breaklines=true,
-	captionpos=t,
-	breakatwhitespace=true,
-	tabsize=2
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  %columns=flexible,
+  %columns=fixed,
+  %columns=fullflexible,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\ttb\color{keywords},
+  commentstyle=\color{comments},
+  stringstyle=\color{strings},
+  breaklines=true,
+  captionpos=t,
+  breakatwhitespace=true,
+  tabsize=2
 }
 
 
@@ -52,28 +52,28 @@
 
 Ví dụ chương tình tính chu vi của đường tròn viết bằng \verb|Python|:
 \begin{itemize}
-	\item Sử dụng môi trường \verb|lstlistings| để chèn code:
-\begin{lstlisting}[language=Python]
+  \item Sử dụng môi trường \verb|lstlistings| để chèn code:
+        \begin{lstlisting}[language=Python]
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
 import math # Thư viện Toán trong Python
-  
+
 def chuvi(rad):
-	""" Tính chu vi đường tròn """
-	CV = 2*math.pi*rad
-	return CV
-  	
-R = [2, 3, 4, 5]  # Bán kính của đường tròn   
+  """ Tính chu vi đường tròn """
+  CV = 2*math.pi*rad
+  return CV
+
+R = [2, 3, 4, 5]  # Bán kính của đường tròn
 for r in R:
-	print chuvi(r)	# In ra chu vi của đường tròn
+  print chuvi(r)	# In ra chu vi của đường tròn
 \end{lstlisting}
 
-	\item Sử dụng lệnh \verb|\lstinputlisting| để chèn code từ file bên ngoài: \lstinputlisting[language=Python]{chuvi.py}
-	
-	\item Sử dụng môi trường \verb|lstlistings| hoặc lệnh \verb|\lstinputlisting| đều cho kết quả như nhau.
-	
-	\item File \TeX\ của ví dụ được lưu ở địa chỉ: \url{https://github.com/thiminhnhut/latex/tree/master/tips/listings/tiengviet-trong-listings/examples/ex-tiengviet-listings.tex}
-	
-	\item File code Python của ví dụ được lưu ở địa chỉ: \url{https://github.com/thiminhnhut/latex/tree/master/tips/listings/tiengviet-trong-listings/examples/chuvi.py}
+  \item Sử dụng lệnh \verb|\lstinputlisting| để chèn code từ file bên ngoài: \lstinputlisting[language=Python]{chuvi.py}
+
+  \item Sử dụng môi trường \verb|lstlistings| hoặc lệnh \verb|\lstinputlisting| đều cho kết quả như nhau.
+
+  \item File \TeX\ của ví dụ được lưu ở địa chỉ: \url{https://github.com/thiminhnhut/latex/tree/master/tips/listings/tiengviet-trong-listings/examples/ex-tiengviet-listings.tex}
+
+  \item File code Python của ví dụ được lưu ở địa chỉ: \url{https://github.com/thiminhnhut/latex/tree/master/tips/listings/tiengviet-trong-listings/examples/chuvi.py}
 \end{itemize}
 \end{document}

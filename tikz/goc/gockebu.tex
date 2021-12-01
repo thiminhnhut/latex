@@ -1,7 +1,7 @@
 \documentclass[12pt,border=5pt]{standalone}
 \usepackage[utf8]{vietnam}
 \usepackage{amsmath}
-\usepackage{amsfonts} 
+\usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
 \usetikzlibrary{positioning, calc}
@@ -19,10 +19,10 @@
   (\gO:\h) coordinate (x) node[above left]{$x$}
   (\gT:\w) coordinate (t) node[above left]{$t$};
 
-  \draw (O) -- (x);
-  \draw (O) -- (t);
-  \draw (O) -- (y);
-
+  \draw
+  (O) -- (x)
+  (O) -- (t)
+  (O) -- (y);
   \foreach \p in {O} \fill (\p) circle (1pt);
 \end{tikzpicture}
 
