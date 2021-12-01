@@ -92,6 +92,10 @@ và tùy chỉnh phù hợp. _Các tài liệu tham khảo đều được ghi r
 
 1. [Quy trình soạn thảo tài liệu LaTeX trên VSCode](https://github.com/thiminhnhut/latex/tree/master/tutorials/latex-workflow.md)
 
+## LaTeX và Git
+
+1. [pre-commit-latex-hooks](https://github.com/thiminhnhut/latex/tree/master/latex-and-git/pre-commit-latex-hooks.md)
+
 ## Lập trình trong TeX
 
 1. [Cấu trúc điều khiển if](https://github.com/thiminhnhut/latex/blob/master/tex/if-condition/readme.md)
