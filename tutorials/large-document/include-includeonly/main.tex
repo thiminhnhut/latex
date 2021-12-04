@@ -1,0 +1,24 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{vietnam}
+\usepackage{indentfirst}
+\usepackage[margin=2cm]{geometry}
+\usepackage{blindtext}
+
+
+\includeonly{
+    % cover/cover,
+    % chapter/chapter01/chapter01,
+    % chapter/chapter02/chapter02,
+}
+
+\begin{document}
+
+\include{cover/cover}
+
+\tableofcontents
+
+\include{chapter/chapter01/chapter01}
+
+\include{chapter/chapter02/chapter02}
+
+\end{document}

@@ -90,6 +90,8 @@ và tùy chỉnh phù hợp. _Các tài liệu tham khảo đều được ghi r
 
    1. [Soạn thảo các dấu mũi tên trong LaTeX](https://github.com/thiminhnhut/latex/tree/master/tutorials/arrow/arrow.md)
 
+1. [Quản lý tài liệu viết bằng LaTeX có nội dung lớn](https://github.com/thiminhnhut/latex/tree/master/tutorials/large-document)
+
 1. [Quy trình soạn thảo tài liệu LaTeX trên VSCode](https://github.com/thiminhnhut/latex/tree/master/tutorials/latex-workflow.md)
 
 ## LaTeX và Git
