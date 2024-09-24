@@ -1,0 +1,33 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{indentfirst}
+\usepackage[unicode,hidelinks=true]{hyperref}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\everymath{\displaystyle}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+
+\usepackage{pgfplots}
+
+\title{\bfseries \LaTeX\ - Vẽ đồ thị từ file CSV bằng TikZ}
+\author{Thực hiện: Thi Minh Nhựt (Email: \texttt{thiminhnhut@gmail.com})}
+\date{Thời gian: Ngày 07 tháng 07 năm 2024}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{tikzpicture}
+    \begin{axis}
+        \addplot table [x=x1, y=y1, col sep=comma] {combine_data.csv};
+    \end{axis}
+\end{tikzpicture}
+
+\end{document}
